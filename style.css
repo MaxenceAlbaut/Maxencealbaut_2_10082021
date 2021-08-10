@@ -1,0 +1,111 @@
+/* inclure police raleway dans 'body' */
+
+
+/*###################### HEADER ######################*/
+
+header
+{
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+}
+
+header > :nth-child(1)
+{
+    /*prop logo*/
+    height: 50px;
+    width: 110px;
+}
+
+#headerRight
+{
+    display: flex;
+    justify-content: space-around;
+    width: 300px;
+    height: 50px;
+    align-items: center;
+}
+
+#headerRight > :nth-child(1)
+{
+    display: flex;
+    justify-content: space-around;
+}
+
+#headerRight > :nth-child(1) > :nth-child(1)
+{
+    margin-right: 20px;
+}
+
+#headerRight > :nth-child(1) > :nth-child(1):active
+{
+    color: #0065FC
+    border: 6px 0px 0px 0px solid blue;
+}
+
+#headerRight > :nth-child(2)
+{
+}
+
+@media screen and (max-device-width: 480px)
+{
+    header
+    {   
+        height: 100px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #headerRight
+    {
+        width: 100%;
+    }
+    
+    #headerRight > :nth-child(1)
+    {
+        width: 100%;
+        margin: auto;
+    }
+
+    #headerRight > :nth-child(2)
+    {
+        position: absolute;
+        top: 25px;
+        right: 25px;
+    }
+
+}
+ /*###################### HEADER END ######################*/
+
+
+
+
+
+
+
+
+ /*###################### SECTION GENERIQUE ######################*/
+a
+{
+    text-decoration: none;
+}
+
+.chartBlue
+{
+    color: #0065FC
+}
+
+.chartLightBlue
+{
+    color: #DEEBFF
+}
+
+.chartGrey
+{
+    color: #F2F2F2
+}
+
+.myBold
+{
+    font-weight: bold;
+}
