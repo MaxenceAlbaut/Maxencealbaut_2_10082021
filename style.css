@@ -2,7 +2,6 @@
 
 
 /*###################### HEADER ######################*/
-
 header
 {
     display: flex;
@@ -78,16 +77,31 @@ header > :nth-child(1)
  /*###################### HEADER END ######################*/
 
  /*###################### SECTION 1 ######################*/
+#section1
+{
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+}
 
 .logoSmall
 {
     height: 16px;
+}
+/*###################### SECTION 1 END ######################*/
+
+/*###################### SECTION 2 ######################*/
+#section2
+{
+    margin-top: 2px;
+    border-top: 2px solid blue;
+    border-bottom: 2px solid blue;
 }
 
 
 
 
 
+/*###################### SECTION 2 END ######################*/
 
  /*###################### SECTION GENERIQUE ######################*/
 a
