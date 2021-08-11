@@ -29,21 +29,21 @@
                 <p>En plein centre ville ou en pleine nature</p>
             </div>
 
-            <div>
+            <div id="citySearch">
                 <img class="logoSmall" src="images/logo/map-marker-alt-solid.svg" alt="logo map marker"/>
                 <form>
                     <div>
-                        <input type="search" placeholder="Marseille, France" name="search"/>
+                        <input id="textSearch" type="search" placeholder="" name="search" value="Marseille, France"/>
                     </div>
                     <div id="searchButton">
-                        <input type="button" value=""/>
+                        <input class="myButton" type="button" value="Rechercher"/>
                     </div>
                 </form>
             </div>
 
-            <div class="filterBox">
+            <div id="filterBox"> <!-- Section des filtres -->
                 <p class="">Filtres</p>
-                <div>  <!--ne pas oublier hover-->
+                <div id="filterItems">  <!--ne pas oublier hover-->
                     <div class="filterElement">
                         <img class="logoSmall" src="images/logo/money-bill-wave-solid.svg" alt="logo money bill"/>
                         <p class="">Économique</p>
@@ -63,7 +63,7 @@
                 </div>
             </div>
 
-            <div>
+            <div class="filterInfo">
                 <img class="logoSmall" src="images/logo/info-circle-solid.svg" alt="logo informmation"/>
                 <p>Plus de 500 logements sont disponibles dans cette ville</p>
             </div>
@@ -218,7 +218,7 @@
 
 
         <section id="section3"> <!-- Activités a Marseille-->
-            <h2>Activités à Marseille</h2>
+            <h2 id="ancreAct">Activités à Marseille</h2>
             <div>
                 <div class="homeCard2">
                     <img src="images/activites/4_small/VieuxPortS.jpg" alt="Vieux Port Marseille"/>
