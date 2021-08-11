@@ -11,7 +11,6 @@ header
 
 header > :nth-child(1)
 {
-    /*prop logo*/
     height: 50px;
     width: 110px;
 }
@@ -95,6 +94,17 @@ header > :nth-child(1)
     margin-top: 2px;
     border-top: 2px solid blue;
     border-bottom: 2px solid blue;
+}
+
+
+
+
+.starNote
+{
+    padding:0;
+    width: 80px;
+    column-count: 5;
+    list-style-type: none;
 }
 
 
