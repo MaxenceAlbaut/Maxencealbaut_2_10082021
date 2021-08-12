@@ -91,8 +91,7 @@ header > :nth-child(1)
  /*###################### SECTION 1 ######################*/
 #section1
 {
-    border-top: 2px solid black;
-    border-bottom: 2px solid black;
+    padding-bottom: 100px;
 }
 
 
@@ -144,9 +143,10 @@ header > :nth-child(1)
 #filterBox
 {
     display: flex;
+    margin-left: 10px;
 }
 
-#filterItems
+#filterItems /* conteneur de tous les elements filtres*/
 {
     display: flex;
 }
@@ -154,53 +154,150 @@ header > :nth-child(1)
 .filterElement
 {
     display: flex;
-    
-    
-    height: 50px;
+    align-items: center;
+    height: 40px;
     margin: 0px 0px 0px 40px;
     border: 2px solid #F2F2F2;
     border-radius: 40px;
 }
 
-.filterElement > :nth-child(1) /* logos */
+.filterLogoBox /* logos */
 {
-    width: 54px;
-    height: 54px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
     border-radius: 50%;
     background-color: #DEEBFF;
-    margin: -2px 0px 0px -3px;
+    margin: -2px 10px 0px -2px;
+    
 }
 
-.filterElement > :nth-child(2) /* filtre */
+
+.filterElement > :nth-child(2) /* texte filtre */
 {
     white-space: nowrap;
-    padding-right: 10px;
+    padding-right: 20px;
     font-weight: bold;
 }
 
-
-
-
+/* hover a rajouter */
 
 
 
 
 .filterInfo
 {
-    margin-top: 50px;
+    margin-top: 5px;
     display: flex;
+    align-items: center;
     /* ... */
 }
+
+.filterInfo > :nth-child(1)
+{
+    margin-right: 10px;
+}
+
 
 /*###################### SECTION 1 END ######################*/
 
 /*###################### SECTION 2 ######################*/
 #section2
 {
-    margin-top: 2px;
-    border-top: 2px solid blue;
-    border-bottom: 2px solid blue;
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 300px;
+    border-bottom: 3px solid red;
 }
+
+.displayCard
+{
+    display: flex;
+
+    flex-direction: column;
+    background-color: #F2F2F2;
+    border: 1px solid black;
+    border-radius: 20px;
+    min-width: 500px;
+}
+
+.homeCardContainer
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: auto;
+    max-width: 839px;
+    border: 2px solid green;
+}
+
+.homeCard
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 210px;
+    background-color: white;
+    border-radius: 20px;
+}
+
+.homeCard .cardPreview
+{
+    width: 200px;
+    height: 100px;
+    margin-top: 4px;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.homeCard2
+{
+    display: flex;
+    height: 130px;
+    background-color: white;
+    border-radius: 20px;
+    margin-bottom: 10px;
+}
+
+.homeCard2 .cardPreview
+{
+    width: 120px;
+    height: 120px;
+    margin-top: 4px;
+    margin-left: 4px;
+    border-radius: 20px 0px 0px 20px;
+}
+
+.cardInfo
+{
+    display: flex;
+    flex-direction: column;
+    font-size: 0.8em;
+    align-self: flex-start;
+    margin-left: 10px;
+}
+
+
+
+
+@media screen and (max-device-width: 480px)
+{
+    #section2
+    {
+        flex-direction: column;
+    }
+    #section2 > :nth-child(1)
+    {
+        order: 2;
+    }
+}
+
+
+
+
+
+
 
 
 .starNote
@@ -211,11 +308,37 @@ header > :nth-child(1)
     list-style-type: none;
 }
 
-
-
-
+.blueStar
+{
+    fill: #0065FC;
+    color: #0065FC;
+}
 
 /*###################### SECTION 2 END ######################*/
+
+
+/*###################### SECTION 3 ######################*/
+
+#actContainer
+{
+    display: flex;
+}
+
+.item3container
+{
+    display: flex;
+}
+
+.actCard img
+{
+    
+    width: 360px
+}
+
+
+/*###################### SECTION 3 END ######################*/
+
+
 
  /*###################### SECTION GENERIQUE ######################*/
 a
@@ -246,4 +369,9 @@ a
 .logoSmall
 {
     height: 16px;
+}
+
+.myFlexRow
+{
+    display: flex;
 }
