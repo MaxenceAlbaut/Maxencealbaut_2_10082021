@@ -230,7 +230,6 @@ header > :nth-child(1)
     justify-content: space-around;
     margin: auto;
     max-width: 839px;
-    border: 2px solid green;
 }
 
 .homeCard
@@ -297,21 +296,19 @@ header > :nth-child(1)
 
 
 
-
-
-
 .starNote
 {
-    padding:0;
-    width: 80px;
-    column-count: 5;
-    list-style-type: none;
+   display: flex;
 }
 
 .blueStar
 {
-    fill: #0065FC;
     color: #0065FC;
+}
+
+.greyStar
+{
+    color: #F2F2F2
 }
 
 /*###################### SECTION 2 END ######################*/
@@ -319,30 +316,105 @@ header > :nth-child(1)
 
 /*###################### SECTION 3 ######################*/
 
+#section3
+{
+    border-bottom: 3px solid red;
+}
+
+#section3 img
+{
+    
+    border-radius: 20px 20px 0px 0px;
+    object-fit: none;
+    width: 360px;
+}
+
 #actContainer
 {
     display: flex;
+    justify-content: space-around;
 }
 
-.item3container
+.threeCardContainer
 {
+    width: 50%;
+    
     display: flex;
+    justify-content: space-around;
+    border: 2px solid red;
 }
 
-.actCard img
+.threeCardContainer > :nth-child(1) > :nth-child(1)/* vertical left card image */
 {
     
-    width: 360px
+    height: 720px;
 }
+
+.twoCardContainer
+{
+    display: flex;
+    
+    flex-direction: column;
+    justify-content: space-between;
+    border: 2px solid green;
+}
+
+
+
+.actCard
+{
+    border-radius: 20px 20px 20px 20px;
+    /* box-shadow: 10px 10px; */
+    border: 1px solid black;
+}
+
+
+
+.twoCardContainer .actCard
+{
+    height: 300px;
+}
+
 
 
 /*###################### SECTION 3 END ######################*/
+
+/*###################### FOOTER ######################*/
+
+footer
+{
+    display: flex;
+    background-color: #F2F2F2;
+}
+
+footer ol
+{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+footer li
+{
+    margin-bottom: 10px;
+}
+
+.footerBox
+{
+    margin-left: 5%;
+    margin-right: 15%;
+}
+
+
+/*###################### FOOTER END ######################*/
+
 
 
 
  /*###################### SECTION GENERIQUE ######################*/
 a
 {
+    color: black;
     text-decoration: none;
 }
 
@@ -374,4 +446,5 @@ a
 .myFlexRow
 {
     display: flex;
+    justify-content: space-between;
 }
