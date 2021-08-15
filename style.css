@@ -321,18 +321,17 @@ header > :nth-child(1)
     border-bottom: 3px solid red;
 }
 
-#section3 img
-{
-    
-    border-radius: 20px 20px 0px 0px;
-    object-fit: none;
-    width: 360px;
-}
 
 #actContainer
 {
     display: flex;
     justify-content: space-around;
+}
+
+#actContainer img
+{
+    
+    border-radius: 20px 20px 0px 0px;
 }
 
 .threeCardContainer
@@ -341,40 +340,56 @@ header > :nth-child(1)
     
     display: flex;
     justify-content: space-around;
-    border: 2px solid red;
 }
 
-.threeCardContainer > :nth-child(1) > :nth-child(1)/* vertical left card image */
+.threeCardContainer > :nth-child(1)
 {
-    
+    width: 360px;
+}
+
+.threeCardContainer > :nth-child(1) img/* vertical left card image */
+{
+
     height: 720px;
+    width: 360px;
+    background-color: royalblue;
+    object-fit: cover;
 }
 
 .twoCardContainer
 {
     display: flex;
-    
     flex-direction: column;
     justify-content: space-between;
-    border: 2px solid green;
+}
+
+.twoCardContainer img
+{
+    width: 360px;
+}
+
+.twoCardContainer > :nth-child(2) /* bottom card*/
+{
+    margin-top: 20px;
 }
 
 
 
 .actCard
 {
+    display: flex;
+    flex-direction: column;
     border-radius: 20px 20px 20px 20px;
-    /* box-shadow: 10px 10px; */
-    border: 1px solid black;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
 }
 
 
 
-.twoCardContainer .actCard
+.actTitle
 {
-    height: 300px;
+    
+    padding-left: 10px;
 }
-
 
 
 /*###################### SECTION 3 END ######################*/
