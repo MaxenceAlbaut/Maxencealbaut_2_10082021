@@ -1,6 +1,7 @@
 /* inclure police raleway dans 'body' */
 
-@font-face {
+@font-face
+{
     font-family: 'raleway';
     src: url('fonts/raleway/Raleway-Regular.ttf');
 }
@@ -26,6 +27,7 @@ header > :nth-child(1)
     width: 110px;
 }
 
+
 #headerRight
 {
     display: flex;
@@ -35,22 +37,31 @@ header > :nth-child(1)
     align-items: center;
 }
 
-#headerRight > :nth-child(1)
+header nav
 {
     display: flex;
     justify-content: space-around;
 }
 
-#headerRight > :nth-child(1) > :nth-child(1)
+nav > :nth-child(1)
 {
     margin-right: 20px;
 }
 
-#headerRight > :nth-child(1) > :nth-child(1):active
+nav a
 {
-    color: #0065FC;
-    border: 6px 0px 0px 0px solid blue;
+    display: inline-block;
+    height: 34px;
+    padding-top: 17px;
 }
+
+nav a:hover
+{
+    padding-top: 15px;
+    color: #0065FC;
+    border-top: 2px solid #0065FC;
+}
+
 
 /*
 #headerRight > :nth-child(2)
@@ -84,6 +95,7 @@ header > :nth-child(1)
         top: 25px;
         right: 25px;
     }
+
 
 }
  /*###################### HEADER END ######################*/
