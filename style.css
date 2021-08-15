@@ -324,13 +324,13 @@ header > :nth-child(1)
 
 #actContainer
 {
+    margin: 30px 30px;
     display: flex;
     justify-content: space-around;
 }
 
 #actContainer img
 {
-    
     border-radius: 20px 20px 0px 0px;
 }
 
@@ -344,15 +344,12 @@ header > :nth-child(1)
 
 .threeCardContainer > :nth-child(1)
 {
-    width: 360px;
+    width: 386px;
 }
 
 .threeCardContainer > :nth-child(1) img/* vertical left card image */
 {
-
-    height: 720px;
-    width: 360px;
-    background-color: royalblue;
+    height: 496px;
     object-fit: cover;
 }
 
@@ -361,18 +358,20 @@ header > :nth-child(1)
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    height: 568px;
 }
 
-.twoCardContainer img
-{
-    width: 360px;
-}
 
 .twoCardContainer > :nth-child(2) /* bottom card*/
 {
     margin-top: 20px;
 }
 
+.twoCardContainer img
+{
+    max-height: 200px;
+    object-fit: cover;
+}
 
 
 .actCard
@@ -383,11 +382,22 @@ header > :nth-child(1)
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
 }
 
+.actCard img
+{
+    width: 386px;
+}
+
 
 
 .actTitle
+{   
+    height: 72px;
+    padding-left: 20px;
+}
+
+.actTitle h3
 {
-    padding-left: 10px;
+    padding-top: 5px;
 }
 
 
