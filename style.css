@@ -387,7 +387,6 @@ header > :nth-child(1)
 
 .actTitle
 {
-    
     padding-left: 10px;
 }
 
@@ -419,6 +418,15 @@ footer li
     margin-left: 5%;
     margin-right: 15%;
 }
+
+@media screen and (max-device-width: 480px)
+{
+    footer
+    {
+        flex-direction: column;
+    }
+}
+
 
 
 /*###################### FOOTER END ######################*/
