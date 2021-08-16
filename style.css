@@ -316,10 +316,6 @@ nav a:hover
     }
 }
 
-
-
-
-
 .starNote
 {
    display: flex;
@@ -341,7 +337,7 @@ nav a:hover
 {
     margin: 30px 30px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 #actContainer img
@@ -350,17 +346,12 @@ nav a:hover
 }
 
 .threeCardContainer
-{
-    width: 50%;
-    
+{  
+    width: 100%;
     display: flex;
     justify-content: space-around;
 }
 
-.threeCardContainer > :nth-child(1)
-{
-    width: 386px;
-}
 
 .threeCardContainer > :nth-child(1) img/* vertical left card image */
 {
@@ -393,14 +384,11 @@ nav a:hover
 {
     display: flex;
     flex-direction: column;
+    width: 386px;
     border-radius: 20px 20px 20px 20px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
 }
 
-.actCard img
-{
-    width: 386px;
-}
 
 
 
@@ -414,6 +402,62 @@ nav a:hover
 {
     padding-top: 5px;
 }
+
+
+.act1
+{
+    height: 496px;
+    background-position: center;
+    background-size: cover;
+    border-radius: 20px 20px 0px 0px;
+    background-image: url("images/activites/4_small/VieuxPortS.jpg");
+}
+
+.act2
+{
+    height: 240px;
+    background-position: center;
+    background-size: cover;
+    border-radius: 20px 20px 0px 0px;
+    background-image: url("images/activites/4_small/FortPomeguesS.jpg");
+}
+
+.act3
+{
+    height: 146px;
+    background-position: center;
+    background-size: cover;
+    border-radius: 20px 20px 0px 0px;
+    background-image: url("images/activites/4_small/IlesFrioulS.jpg")
+}
+
+.act4
+{
+    height: 496px;
+    background-position: center;
+    background-size: cover;
+    border-radius: 20px 20px 0px 0px;
+    background-image: url("images/activites/3_medium/ParcCalanquesM.jpg")
+}
+
+.act5
+{
+    height: 184px;
+    background-position: center;
+    background-size: cover;
+    border-radius: 20px 20px 0px 0px;
+    background-image: url("images/activites/4_small/NotreDameS.jpg")
+}
+
+.act6
+{
+    height: 204px;
+    background-position: center;
+    background-size: cover;
+    border-radius: 20px 20px 0px 0px;
+    background-image: url("images/activites/4_small/ParcLongchampS.jpg")
+}
+
 
 
 /*###################### SECTION 3 END ######################*/
