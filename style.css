@@ -62,13 +62,6 @@ nav a:hover
     border-top: 2px solid #0065FC;
 }
 
-
-/*
-#headerRight > :nth-child(2)
-{
-}
-*/
-
 @media screen and (max-device-width: 480px)
 {
     header
@@ -121,8 +114,10 @@ nav a:hover
 
 #citySearch > :nth-child(1) /* logo map marker*/
 {
+    margin-left: 24px;
     flex: 1;
 }
+
 
 #citySearch > :nth-child(2) /* form + button */
 {
@@ -204,13 +199,30 @@ nav a:hover
     margin-top: 5px;
     display: flex;
     align-items: center;
+    
     /* ... */
 }
 
-.filterInfo > :nth-child(1)
+.logoInfoBox
 {
-    margin-right: 10px;
+    margin: 0 10px 0 0;
+    background-color: #0065FC;
+    height: 18px;
+    width: 18px;
+    border-radius: 50%;
+    box-sizing: border-box;
+    border: 2px solid #F2F2F2;
+    position: relative;
 }
+
+.logoInfo
+{
+    position: absolute;
+    top: -1px;
+    left: -1px;
+    color: white;
+}
+
 
 
 /*###################### SECTION 1 END ######################*/
@@ -313,15 +325,6 @@ nav a:hover
    display: flex;
 }
 
-.blueStar
-{
-    color: #0065FC;
-}
-
-.greyStar
-{
-    color: #F2F2F2
-}
 
 /*###################### SECTION 2 END ######################*/
 
