@@ -59,10 +59,9 @@ body
 
 .navLinkTop
 {
-    margin-top: 20px;
-    padding-bottom: 17px;
-    padding-left: 30px;
-    padding-right: 30px;
+    padding: 15px;
+    
+    border: 1px solid black;
 }
 
 .bottomNavElement
@@ -87,7 +86,12 @@ body
     border-top: 3px solid #0065FC;
 }
 
-.navLink:hover
+.navLinkTop:hover
+{
+    color: #0065FC;
+}
+
+.navLinkBot:hover
 {
     color: #0065FC;
 }
@@ -102,7 +106,7 @@ body
     border-bottom: 3px solid #0065FC;
 }
 
-@media only screen and (max-device-width: 630px)
+@media only screen and (max-device-width: 480px) /* A CHANGER */
 {
     #myHeader
     {
@@ -137,7 +141,6 @@ body
         align-items: center;
         border-bottom: 2px solid #F2F2F2;
     }
-
 }
 
 
