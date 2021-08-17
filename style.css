@@ -554,7 +554,7 @@ body
     background-image: url("images/activites/4_small/ParcLongchampS.jpg")
 }
 
-.actCard:hover
+.actCard:hover, .homeCard:hover
 {
     cursor: pointer;
     transform: scale(1.02);
