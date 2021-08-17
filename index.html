@@ -91,10 +91,11 @@
         <section id="section2"> <!-- Hébergements a Marseille-->
 
             <div class="displayCard"> <!--block de gauche (Hebergements)-->
-                <h2 id="ancreHeb">Hébergements à Marseille</h2>
-                <div class="homeCardContainer"> <!--flex wrap-->
-                    <div class="homeCard"> <!-- <a> + inline block?-->
-                            <img class="cardPreview" src="images/hebergements/4_small/AubergeCannebiereS.jpg" alt="Auberge Cannebière Marseille"/>
+                <div class="subContainer">
+                    <h2 id="ancreHeb">Hébergements à Marseille</h2>
+                    <div class="homeCardContainer"> <!--flex wrap-->
+                        <div class="homeCard">
+                            <div class="cardPreview card1"></div>
                             <div class="cardInfo">
                                 <h3>Auberge la Cannebière</h3>
                                 <p>Nuit à partir de <span class="myBold">25&euro;</span></p>
@@ -106,9 +107,9 @@
                                     <i class="fas fa-star chartGrey"></i>    
                                 </div>
                             </div>
-                    </div>
-                    <div class="homeCard"> <!-- <a> + inline block?-->
-                            <img class="cardPreview" src="images/hebergements/4_small/HotelPortS.jpg" alt="Hôtel port Marseille"/>
+                        </div>
+                        <div class="homeCard">
+                            <div class="cardPreview card2"></div>
                             <div class="cardInfo">
                                 <h3>Hôtel du port</h3>
                                 <p>Nuit à partir de 52&euro;</p>
@@ -120,9 +121,9 @@
                                     <i class="fas fa-star chartBlue"></i>    
                                 </div>
                             </div>
-                    </div>
-                    <div class="homeCard"> <!-- <a> + inline block?-->
-                            <img class="cardPreview" src="images/hebergements/4_small/HotelMouetteS.jpg" alt="Hôtel mouettes Marseille"/>
+                        </div>
+                        <div class="homeCard">
+                            <div class="cardPreview card3"></div>
                             <div class="cardInfo">
                                 <h3>Hôtel Les mouettes</h3>
                                 <p>Nuit à partir de 76&euro;</p>
@@ -134,9 +135,9 @@
                                     <i class="fas fa-star chartGrey"></i>    
                                 </div>
                             </div>
-                    </div>
-                    <div class="homeCard"> <!-- <a> + inline block?-->
-                            <img class="cardPreview" src="images/hebergements/4_small/HotelMerS.jpg" alt="Hôtel mer Marseille"/>
+                        </div>
+                        <div class="homeCard">
+                            <div class="cardPreview card4"></div>
                             <div class="cardInfo">
                                 <h3>Hôtel de la mer</h3>
                                 <p>Nuit à partir de 46&euro;</p>
@@ -148,9 +149,9 @@
                                     <i class="fas fa-star chartGrey"></i>    
                                 </div>
                             </div>
-                    </div>
-                    <div class="homeCard"> <!-- <a> + inline block?-->
-                            <img class="cardPreview" src="images/hebergements/4_small/AubergePanierS.jpg" alt="Auberge Panier Marseille"/>
+                        </div>
+                        <div class="homeCard">
+                            <div class="cardPreview card5"></div>
                             <div class="cardInfo">
                                 <h3>Auberge le Panier</h3>
                                 <p>Nuit à partir de <span class="myBold">23&euro;</span></p>
@@ -162,9 +163,9 @@
                                     <i class="fas fa-star chartGrey"></i>    
                                 </div>
                             </div>
-                    </div>
-                    <div class="homeCard"> <!-- <a> + inline block?-->
-                            <img class="cardPreview" src="images/hebergements/4_small/HotelAminaS.jpg" alt="Hôtel Amina Marseille"/>
+                        </div>
+                        <div class="homeCard">
+                            <div class="cardPreview card6"></div>
                             <div class="cardInfo">
                                 <h3>Hôtel chez Amina</h3>
                                 <p>Nuit à partir de 96&euro;</p>
@@ -176,56 +177,59 @@
                                     <i class="fas fa-star chartBlue"></i>    
                                 </div>
                             </div>
+                        </div>
                     </div>
-                 </div>
-                 <a class="">Afficher plus</p>
-              </div> <!--FIN block de gauche (Hebergements)-->
+                    <div class="afficherPlus"><a class="myBold" href="">Afficher plus</a></div>
+                </div>
+            </div> <!--FIN block de gauche (Hebergements)-->
 
-            <div class="displayCard"> <!--block de droite (Populaires)-->
-                <div class="myFlexRow">
-                    <h2>Les plus populaires</h2>
-                    <i class="fas fa-chart-line"></i>
-                </div>
-                <div class="homeCard2"> <!-- <a> + inline block?-->
-                    <img class="cardPreview" src="images/hebergements/4_small/HotelSoleilS.jpg" alt="Hôtel soleil du matin Marseille"/>
-                    <div class="cardInfo"> <!--homeCard2 > cardInfo:nth-child(3) {align-self:bottom}-->
-                            <h3>Hôtel Le soleil du matin</h3>
-                            <p>Nuit à partir de 128&euro;</p>
-                            <div class="starNote">
-                                <i class="fas fa-star chartBlue"></i>
-                                <i class="fas fa-star chartBlue"></i>
-                                <i class="fas fa-star chartBlue"></i>
-                                <i class="fas fa-star chartBlue"></i>
-                                <i class="fas fa-star chartBlue"></i>    
-                            </div>
+            <div class="displayCard2"> <!--block de droite (Populaires)-->
+                <div class="subContainer">
+                    <div class="myFlexRow">
+                        <h2>Les plus populaires</h2>
+                        <i class="fas fa-chart-line"></i>
                     </div>
-                </div>
-                <div class="homeCard2"> <!-- <a> + inline block?-->
-                    <img class="cardPreview" src="images/hebergements/4_small/ChambreHoteS.jpg" alt="Chambres d'hôtes cœur de l'eau Marseille"/>
-                    <div class="cardInfo">
-                            <h3>Au cœur de l'eau Chambres d'hôtes</h3>
-                            <p>Nuit à partir de 71&euro;</p>
-                            <div class="starNote">
-                                <i class="fas fa-star chartBlue"></i>
-                                <i class="fas fa-star chartBlue"></i>
-                                <i class="fas fa-star chartBlue"></i>
-                                <i class="fas fa-star chartBlue"></i>
-                                <i class="fas fa-star chartGrey"></i>    
-                            </div>
+                    <div class="homeCard2"> <!-- <a> + inline block?-->
+                        <img class="cardPreview" src="images/hebergements/4_small/HotelSoleilS.jpg" alt="Hôtel soleil du matin Marseille"/>
+                        <div class="cardInfo"> <!--homeCard2 > cardInfo:nth-child(3) {align-self:bottom}-->
+                                <h3>Hôtel Le soleil du matin</h3>
+                                <p>Nuit à partir de 128&euro;</p>
+                                <div class="starNote">
+                                    <i class="fas fa-star chartBlue"></i>
+                                    <i class="fas fa-star chartBlue"></i>
+                                    <i class="fas fa-star chartBlue"></i>
+                                    <i class="fas fa-star chartBlue"></i>
+                                    <i class="fas fa-star chartBlue"></i>    
+                                </div>
+                        </div>
                     </div>
-                </div>
-                <div class="homeCard2"> <!-- <a> + inline block?-->
-                    <img class="cardPreview" src="images/hebergements/4_small/HotelBleuS.jpg" alt="Hôtel bleu blanc Marseille"/>
-                    <div class="cardInfo">
-                            <h3>Hôtel Tout bleu et Blanc</h3>
-                            <p>Nuit à partir de 68&euro;</p>
-                            <div class="starNote">
-                                <i class="fas fa-star chartBlue"></i>
-                                <i class="fas fa-star chartBlue"></i>
-                                <i class="fas fa-star chartBlue"></i>
-                                <i class="fas fa-star chartBlue"></i>
-                                <i class="fas fa-star chartGrey"></i>    
-                            </div>
+                    <div class="homeCard2"> <!-- <a> + inline block?-->
+                        <img class="cardPreview" src="images/hebergements/4_small/ChambreHoteS.jpg" alt="Chambres d'hôtes cœur de l'eau Marseille"/>
+                        <div class="cardInfo">
+                                <h3>Au cœur de l'eau Chambres d'hôtes</h3>
+                                <p>Nuit à partir de 71&euro;</p>
+                                <div class="starNote">
+                                    <i class="fas fa-star chartBlue"></i>
+                                    <i class="fas fa-star chartBlue"></i>
+                                    <i class="fas fa-star chartBlue"></i>
+                                    <i class="fas fa-star chartBlue"></i>
+                                    <i class="fas fa-star chartGrey"></i>    
+                                </div>
+                        </div>
+                    </div>
+                    <div class="homeCard2"> <!-- <a> + inline block?-->
+                        <img class="cardPreview" src="images/hebergements/4_small/HotelBleuS.jpg" alt="Hôtel bleu blanc Marseille"/>
+                        <div class="cardInfo">
+                                <h3>Hôtel Tout bleu et Blanc</h3>
+                                <p>Nuit à partir de 68&euro;</p>
+                                <div class="starNote">
+                                    <i class="fas fa-star chartBlue"></i>
+                                    <i class="fas fa-star chartBlue"></i>
+                                    <i class="fas fa-star chartBlue"></i>
+                                    <i class="fas fa-star chartBlue"></i>
+                                    <i class="fas fa-star chartGrey"></i>    
+                                </div>
+                        </div>
                     </div>
                 </div>
             </div> <!--FIN block de droite (Populaires)-->
@@ -291,7 +295,7 @@
                     <li><a href="">Charte qualité</a></li>
                     <li><a href="">Soumettre votre hôtel</a></li>
                 </ol>
-            </div class="footerBox">
+            </div>
             <div class="footerBox">
                 <h2>Assistance</h2>
                 <ol>
