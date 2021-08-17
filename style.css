@@ -256,6 +256,8 @@ nav a:hover
     max-width: 839px;
 }
 
+
+
 .homeCard
 {
     display: flex;
@@ -265,6 +267,7 @@ nav a:hover
     background-color: white;
     border-radius: 20px;
 }
+
 
 .homeCard .cardPreview
 {
@@ -340,10 +343,6 @@ nav a:hover
     justify-content: space-between;
 }
 
-#actContainer img
-{
-    border-radius: 20px 20px 0px 0px;
-}
 
 .threeCardContainer
 {  
@@ -352,11 +351,9 @@ nav a:hover
     justify-content: space-around;
 }
 
-
-.threeCardContainer > :nth-child(1) img/* vertical left card image */
+.oneCardContainer
 {
-    height: 496px;
-    object-fit: cover;
+    width: 45%;
 }
 
 .twoCardContainer
@@ -364,33 +361,17 @@ nav a:hover
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 568px;
+    width: 45%;
 }
-
-
-.twoCardContainer > :nth-child(2) /* bottom card*/
-{
-    margin-top: 20px;
-}
-
-.twoCardContainer img
-{
-    max-height: 200px;
-    object-fit: cover;
-}
-
 
 .actCard
 {
     display: flex;
     flex-direction: column;
-    width: 386px;
+    /* max-width: 386px; */
     border-radius: 20px 20px 20px 20px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
 }
-
-
-
 
 .actTitle
 {   
@@ -404,60 +385,60 @@ nav a:hover
 }
 
 
-.act1
+.threeCardContainer 
+
+.actImg
 {
-    height: 496px;
     background-position: center;
     background-size: cover;
     border-radius: 20px 20px 0px 0px;
+}
+
+
+.act1
+{
+    height: 496px;
     background-image: url("images/activites/4_small/VieuxPortS.jpg");
 }
 
 .act2
 {
     height: 240px;
-    background-position: center;
-    background-size: cover;
-    border-radius: 20px 20px 0px 0px;
     background-image: url("images/activites/4_small/FortPomeguesS.jpg");
 }
 
 .act3
 {
     height: 146px;
-    background-position: center;
-    background-size: cover;
-    border-radius: 20px 20px 0px 0px;
     background-image: url("images/activites/4_small/IlesFrioulS.jpg")
 }
 
 .act4
 {
     height: 496px;
-    background-position: center;
-    background-size: cover;
-    border-radius: 20px 20px 0px 0px;
     background-image: url("images/activites/3_medium/ParcCalanquesM.jpg")
 }
 
 .act5
 {
     height: 184px;
-    background-position: center;
-    background-size: cover;
-    border-radius: 20px 20px 0px 0px;
     background-image: url("images/activites/4_small/NotreDameS.jpg")
 }
 
 .act6
 {
     height: 204px;
-    background-position: center;
-    background-size: cover;
-    border-radius: 20px 20px 0px 0px;
     background-image: url("images/activites/4_small/ParcLongchampS.jpg")
 }
 
+.actCard:hover
+{
+    cursor: pointer;
+    transform: scale(1.02);
+}
+
+
+/* responsive a ajouter*/
 
 
 /*###################### SECTION 3 END ######################*/
@@ -539,4 +520,12 @@ a
 {
     display: flex;
     justify-content: space-between;
+    
+}
+
+.myFlexRow > :nth-child(2)
+{
+    margin-top: 20px;
+    margin-right: 20px;
+
 }
