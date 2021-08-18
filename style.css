@@ -279,7 +279,6 @@ body
 {
     display: flex;
     margin: 30px;
-    border: 1px solid black;
 }
 
 .displayCard /* Left block */
@@ -290,7 +289,6 @@ body
     margin-right: 3%;
     background-color: #F2F2F2;
     border-radius: 20px;
-    border: 1px solid black;
 }
 
 .subContainer
@@ -320,6 +318,7 @@ body
     margin-bottom: 2%;
     background-color: white;
     border-radius: 20px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.25);
 }
 
 .cardPreview
@@ -342,7 +341,7 @@ body
     
 }
 
-.cardInfo > *
+.cardInfo > *, .cardInfo2 > *
 {
     margin: 0;
 }
@@ -355,23 +354,80 @@ body
 .displayCard2 /* Right block */
 {
     display: flex;
-    height: 100%;
+    height: auto;
     width: 33%;
     background-color: #F2F2F2;
-    border: 1px solid black;
     border-radius: 20px;
+}
+
+.subContainer2
+{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: 100%;
+    margin: 10px 6% 10px 6%;
+}
+
+.homeCard2Container
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    margin-bottom: 5%;
 }
 
 .homeCard2
 {
     display: flex;
-    height: 130px;
+    height: 160px;
     background-color: white;
     border-radius: 20px;
-    margin-bottom: 10px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.25);
+}
+
+.card2Preview
+{
+    width: 37%;
+    border-radius: 15px 0 0 15px;
+    margin: 1.5% 0 1.5% 1.5%;
+    background-size: cover;
+    background-position: center;
+}
+
+.cardInfo2
+{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: flex-start;
+    margin: 1.5% 0 1.5% 4%;
+}
+
+.cardInfo2 h3
+{
+    margin: 10px 0 10px 0;
+    font-weight: bold;
+}
+
+.cardInfo2 > :nth-child(2)
+{
+    margin-bottom: 40px;
 }
 
 
+.popuTitle
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+.popuTitle > :nth-child(2)
+{
+    margin-top: 20px;
+    font-size: 1.6em;
+}
 
 
 .card1
@@ -406,20 +462,24 @@ body
 
 .card7
 {
-    background-image: url();
+    background-image: url("images/hebergements/4_small/HotelSoleilS.jpg");
 }
 
 .card8
 {
-    background-image: url();
+    background-image: url("images/hebergements/4_small/ChambreHoteS.jpg");
 }
 
 .card9
 {
-    background-image: url();
+    background-image: url("images/hebergements/4_small/HotelBleuS.jpg");
 }
 
 
+.starNote
+{
+   display: flex;
+}
 
 .afficherPlus
 {
@@ -441,10 +501,7 @@ body
     }
 }
 
-.starNote
-{
-   display: flex;
-}
+
 
 
 /*###################### SECTION 2 END ######################*/
@@ -493,7 +550,7 @@ body
     flex-direction: column;
     /* max-width: 386px; */
     border-radius: 20px 20px 20px 20px;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.25);
 }
 
 .actTitle
@@ -554,7 +611,7 @@ body
     background-image: url("images/activites/4_small/ParcLongchampS.jpg")
 }
 
-.actCard:hover, .homeCard:hover
+.actCard:hover, .homeCard:hover, .homeCard2:hover
 {
     cursor: pointer;
     transform: scale(1.02);
@@ -643,12 +700,4 @@ a
 {
     display: flex;
     justify-content: space-between;
-    
-}
-
-.myFlexRow > :nth-child(2)
-{
-    margin-top: 20px;
-    margin-right: 20px;
-
 }
