@@ -539,13 +539,13 @@ body
 
 #section3
 {
-    margin: 30px;
+    margin: 40px 30px 40px 30px;
 }
 
 
 #actContainer
 {
-    margin: 30px 30px;
+    margin: 0 -20px 0 -20px;
     display: flex;
     justify-content: space-between;
 }
