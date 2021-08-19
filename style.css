@@ -215,7 +215,19 @@ body
     border-radius: 40px;
 }
 
-.filterLogoBox /* logos */
+.filterElement:hover
+{
+    transform: scale(1.1);
+    background-color: #0065FC;
+}
+
+.filterElement:hover .filterWord
+{
+    color: white;
+}
+
+
+.filterLogoBox
 {
     display: flex;
     justify-content: center;
@@ -225,11 +237,10 @@ body
     border-radius: 50%;
     background-color: #DEEBFF;
     margin: -2px 10px 0px -2px;
-    
 }
 
 
-.filterElement > :nth-child(2) /* texte filtre */
+.filterWord
 {
     white-space: nowrap;
     padding-right: 20px;
