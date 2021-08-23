@@ -110,8 +110,8 @@ body
 
     .headerTop
     {
-        margin-left: 15px;
-        margin-right: 15px;
+        margin-left: 5%;
+        margin-right: 5%;
     }
 
     .topRightNavContainer
@@ -271,7 +271,7 @@ body
 
 .filterInfo
 {
-    margin-top: 5px;
+    margin: 5px 0 0 10px;
     display: flex;
     align-items: center;
 }
@@ -280,21 +280,21 @@ body
 {
     margin: 0 10px 0 0;
     background-color: #0065FC;
-    height: 24px;
-    width: 24px;
+    height: 22px;
+    width: 22px;
     border-radius: 50%;
-    box-sizing: border-box;
-    border: 2px solid #F2F2F2;
     position: relative;
 }
 
 .logoInfo
 {
     position: absolute;
+    top: -3px;
+    left: -3px;
     font-size: 1.4em;
-    top: -1px;
-    left: -1px;
     color: white;
+    border-radius: 50%;
+    border: 2px solid #F2F2F2;
 }
 
 .myButton2
@@ -306,7 +306,12 @@ body
 {
     #section1
     {
-        margin: 30px 15px 0px 15px;
+        margin: 30px 5% 0px 5%;
+    }
+    
+    #citySearch
+    {
+        margin-top: 20px;
     }
 
     h1
@@ -316,7 +321,7 @@ body
 
     h1 + p
     {
-        margin: -8px 0 20px 0;
+        margin: -8px 0 0 0;
         font-size: 0.9em;
     }
 
@@ -379,14 +384,6 @@ body
     {
         font-size: 12px;
         font-weight: bold;
-    }
-
-    .logoInfo
-    {
-        top: -2px;
-        left: -5px;
-        border-radius: 50%;
-        border: 2px solid #F2F2F2;
     }
 
     .filterInfo p
@@ -620,7 +617,6 @@ body
 
     .displayCard2
     {
-        margin: 0;
         background-color: #F2F2F2;
         border-radius: 0;
         width: 100%;
@@ -650,11 +646,16 @@ body
 
     .displayCard
     {
-        margin: 0;
+        margin: 0 7% 0 7%;
         background-color: white;
         border-radius: 0;
         width: 100%;
         order: 2;
+    }
+
+    .subContainer
+    {
+        margin: 0;
     }
 
     .homeCardContainer
@@ -665,13 +666,19 @@ body
 
     .homeCard
     {
-        width: 100%;
-        height: 224px;
+        width: 86%;
+        height: 196px;
+        margin-bottom: 20px;
     }
 
     .afficherPlus
     {
-        margin: 20px 0 20px 0;
+        margin-top: 20px;
+    }
+
+    .starNote *
+    {
+        font-size: 0.8em;
     }
 }
 
@@ -720,7 +727,6 @@ body
 {
     display: flex;
     flex-direction: column;
-    /* max-width: 386px; */
     border-radius: 20px 20px 20px 20px;
     box-shadow: 0 0 6px rgba(0, 0, 0, 0.25);
 }
@@ -736,16 +742,12 @@ body
     padding-top: 5px;
 }
 
-
-.threeCardContainer 
-
 .actImg
 {
     background-position: center;
     background-size: cover;
     border-radius: 20px 20px 0px 0px;
 }
-
 
 .act1
 {
@@ -789,12 +791,28 @@ body
     transform: scale(1.02);
 }
 
-
 @media screen and (max-width: 1024px)
 {
     #section3
     {
-        display: none;
+        margin: 40px 7% 0 7%;
+    }
+
+    #actContainer, .threeCardContainer
+    {
+        margin: 0;
+        flex-direction: column;
+    }
+
+    .threeCardContainer, .twoCardContainer, .oneCardContainer
+    {
+        width: 100%;
+    }
+
+    .actCard
+    {
+        height: 196px;
+        margin-bottom: 20px;
     }
 }
 
