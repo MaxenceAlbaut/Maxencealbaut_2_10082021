@@ -216,6 +216,7 @@ body
     background-color: #DEEBFF;
     color: #0065FC;
     cursor: pointer;
+    transition-duration: 200ms;
 }
 
 #filterBox
@@ -243,11 +244,13 @@ body
 {
     transform: scale(1.1);
     background-color: #0065FC;
+    transition-duration: 200ms;
 }
 
 .filterElement:hover .filterWord
 {
     color: white;
+    transition-duration: 200ms;
 }
 
 .filterLogoBox
@@ -278,10 +281,10 @@ body
 
 .logoInfoBox
 {
-    margin: 0 10px 0 0;
+    margin: 0 15px 0 0;
     background-color: #0065FC;
-    height: 22px;
-    width: 22px;
+    height: 21px;
+    width: 21px;
     border-radius: 50%;
     position: relative;
 }
@@ -291,9 +294,10 @@ body
     position: absolute;
     top: -3px;
     left: -3px;
-    font-size: 1.4em;
+    font-size: 1.5em;
     color: white;
     border-radius: 50%;
+    box-sizing: border-box;
     border: 2px solid #F2F2F2;
 }
 
@@ -340,23 +344,6 @@ body
         font-size: 14px;
     }
 
-    .myButton
-    {
-        display: none;
-    }
-
-    .myButton2
-    {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        height: 50px;
-        width: 50px;
-        margin-left: -10px;
-        background-color: #0065FC;
-        border-radius: 15px;
-    }
-
     .searchIcon
     {
         font-size: 1.05em;
@@ -368,6 +355,11 @@ body
         margin-top: -20px;
         margin-left: 5px;
         flex-direction: column;
+    }
+
+    #filterBox > :nth-child(1)
+    {
+        font-size: 16px;
     }
 
     #filterItems
@@ -389,6 +381,26 @@ body
     .filterInfo p
     {
         font-size: 14px;
+    }
+}
+
+@media only screen and (max-width: 420px)
+{
+    .myButton
+    {
+        display: none;
+    }
+
+    .myButton2
+    {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 50px;
+        width: 50px;
+        margin-left: -10px;
+        background-color: #0065FC;
+        border-radius: 15px;
     }
 }
 
@@ -520,9 +532,8 @@ body
 {
     display: flex;
     flex-direction: column;
-    width: 100%;
-    justify-content: flex-start;
-    margin: 1.5% 0 1.5% 4%;
+    width: 60%;
+    margin: 1.5% 2% 1.5% 4%;
     position: relative;
 }
 
@@ -538,7 +549,7 @@ body
     justify-content: space-between;
 }
 
-.popuTitle > :nth-child(2)
+.popuTitle > :nth-child(2) /* chart line */
 {
     margin-top: 20px;
     font-size: 1.6em;
@@ -624,19 +635,7 @@ body
 
     .homeCard2
     {
-        height: 140px;
-        margin-bottom: 10px;
-    }
-
-    .card2Preview
-    {
-        width: 40%;
-    }
-
-    .cardInfo2
-    {
-        width: auto;
-        margin-right: 1%;
+        margin-bottom: 15px;
     }
 
     .cardInfo2 h3, p
@@ -646,7 +645,7 @@ body
 
     .displayCard
     {
-        margin: 0 7% 0 7%;
+        margin: 0;
         background-color: white;
         border-radius: 0;
         width: 100%;
@@ -655,9 +654,22 @@ body
 
     .subContainer
     {
-        margin: 0;
+        margin: 0 6% 0 6%;
     }
 
+    .homeCard
+    {
+        width: 45%;
+    }
+
+    .afficherPlus
+    {
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width: 480px)
+{
     .homeCardContainer
     {
         flex-direction: column;
@@ -671,18 +683,19 @@ body
         margin-bottom: 20px;
     }
 
-    .afficherPlus
-    {
-        margin-top: 20px;
-    }
-
     .starNote *
     {
         font-size: 0.8em;
     }
 }
 
-
+@media screen and (min-width: 481px) and (max-width: 1024px)
+{
+    .card2Preview
+    {
+        margin: 1% 0 1% 1%;
+    }
+}
 
 /*###################### SECTION 2 END ######################*/
 
@@ -789,9 +802,10 @@ body
 {
     cursor: pointer;
     transform: scale(1.02);
+    transition-duration: 200ms;
 }
 
-@media screen and (max-width: 1024px)
+@media screen and (max-width: 480px)
 {
     #section3
     {
@@ -814,6 +828,35 @@ body
         height: 196px;
         margin-bottom: 20px;
     }
+}
+
+@media screen and (max-width: 1024px) and (min-width: 481px)
+{
+    #actContainer
+    {
+        flex-direction: column;
+    }
+
+    #actContainer > :nth-child(1)
+    {
+        margin-bottom: 30px;
+    }
+
+    .oneCardContainer > :nth-child(1)
+    {
+        height: 340px;
+    }
+
+    .twoCardContainer .actCard
+    {
+        height: 165px;
+    }
+
+    .twoCardContainer .actCard:nth-child(1)
+    {
+        margin-bottom: 10px;
+    }
+
 }
 
 
@@ -845,11 +888,24 @@ footer li
     margin-right: 15%;
 }
 
-@media screen and (max-width: 1024px)
+@media screen and (max-width: 800px)
+{
+    .footerBox
+    {
+        margin-right: 5%;
+    }
+}
+
+@media screen and (max-width: 600px)
 {
     footer
     {
         flex-direction: column;
+    }
+
+    .footerBox
+    {
+        margin-left: 7%;
     }
 }
 
