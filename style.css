@@ -7,7 +7,6 @@
 body
 {
     font-family: 'raleway', Impact, "Arial Black", Arial, Verdana, sans-serif;
-    font-weight: 500;
 }
 
 /*###################### HEADER ######################*/
@@ -100,7 +99,7 @@ body
     border-bottom: 3px solid #0065FC;
 }
 
-@media only screen and (max-width: 1024px)
+@media only screen and (max-width: 1036px)
 {
     #myHeader
     {
@@ -306,7 +305,7 @@ body
     display: none;
 }
 
-@media only screen and (max-width: 1024px)
+@media only screen and (max-width: 1036px)
 {
     #section1
     {
@@ -407,6 +406,7 @@ body
 /*###################### SECTION 1 END ######################*/
 
 /*###################### SECTION 2 ######################*/
+
 #section2
 {
     display: flex;
@@ -618,7 +618,7 @@ body
     padding: 0 0 1% 0;
 }
 
-@media screen and (max-width: 1024px)
+@media screen and (max-width: 1036px)
 {
     #section2
     {
@@ -684,7 +684,7 @@ body
     }
 }
 
-@media screen and (min-width: 481px) and (max-width: 1024px)
+@media screen and (min-width: 481px) and (max-width: 1036px)
 {
     .card2Preview
     {
@@ -694,7 +694,6 @@ body
 
 /*###################### SECTION 2 END ######################*/
 
-
 /*###################### SECTION 3 ######################*/
 
 #section3
@@ -702,14 +701,12 @@ body
     margin: 40px 30px 40px 30px;
 }
 
-
 #actContainer
 {
     margin: 0 -20px 0 -20px;
     display: flex;
     justify-content: space-between;
 }
-
 
 .threeCardContainer
 {  
@@ -825,7 +822,7 @@ body
     }
 }
 
-@media screen and (max-width: 1024px) and (min-width: 481px)
+@media screen and (max-width: 1036px) and (min-width: 481px)
 {
     #actContainer
     {
